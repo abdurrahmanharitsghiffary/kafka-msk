@@ -14,4 +14,6 @@ COPY --from=build /home/app/target/kafka-msk-1.0-SNAPSHOT.jar app.jar
 
 ARG BOOTSTRAP_SERVERS=${BOOTSTRAP_SERVERS}
 
-ENTRYPOINT ["java", "-jar", "/usr/local/lib/app.jar"]
+# ENTRYPOINT ["java", "-jar", "/usr/local/lib/app.jar"]
+ENTRYPOINT ["java", "-cp", "/usr/local/lib/app.jar"]
+CMD []
