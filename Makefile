@@ -1,4 +1,4 @@
-APP_NAME=kafka-sample
+APP_NAME=kafka-msk
 JAR_NAME=kafka-msk-1.0-SNAPSHOT.jar
 MAIN_PACKAGE=com.example.kafka
 
